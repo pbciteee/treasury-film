@@ -1,75 +1,91 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Treasury — the art of keeping money alive</title>
-<meta name="description" content="A short cinematic learning film on how banks and funds actually fund themselves: maturity transformation, liquidity vs solvency, repo, collateral, and the crises.">
-<meta property="og:title" content="Treasury — the art of keeping money alive">
-<meta property="og:description" content="A 3-minute cinematic explainer on the funding engine of finance.">
-<meta property="og:image" content="poster.jpg">
-<meta property="og:type" content="video.other">
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Treasury — the complete course</title>
+<meta name="description" content="A seven-chapter cinematic course on the treasury & funding function: funding, liquidity, collateral, hedge-fund financing, XVA, and the market's plumbing.">
+<meta property="og:title" content="Treasury — the complete course">
+<meta property="og:image" content="poster1.jpg"><meta property="og:type" content="video.other">
 <style>
-  :root{--bg:#0b1418;--ink:#f2ede1;--teal:#4bc0b0;--dim:#8aa0a6;--line:#223139}
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{background:
-      radial-gradient(120% 90% at 50% 0%,#12242b,#070f12);
-      color:var(--ink);font-family:Georgia,"Times New Roman",serif;
-      min-height:100vh;display:flex;flex-direction:column;align-items:center;
-      padding:40px 20px 70px}
-  .eyebrow{font-family:system-ui,sans-serif;font-size:13px;letter-spacing:.28em;
-    text-transform:uppercase;color:var(--teal);font-weight:700;margin-top:18px}
-  h1{font-size:clamp(30px,5.5vw,56px);font-weight:700;line-height:1.05;margin:12px 0 6px;text-align:center}
-  .sub{font-style:italic;color:#cfc8b8;font-size:clamp(17px,2.4vw,22px);text-align:center;margin-bottom:26px}
-  .player{width:100%;max-width:980px;border-radius:14px;overflow:hidden;
-    border:1px solid var(--line);box-shadow:0 20px 70px rgba(0,0,0,.55);background:#000}
-  video{width:100%;display:block;aspect-ratio:16/9;background:#000}
-  .meta{max-width:980px;width:100%;display:flex;gap:16px;flex-wrap:wrap;
-    align-items:center;justify-content:space-between;margin-top:16px;
-    font-family:system-ui,sans-serif;color:var(--dim);font-size:14px}
-  .meta a{color:var(--teal);text-decoration:none;border:1px solid var(--line);
-    border-radius:9px;padding:8px 14px}
-  .meta a:hover{border-color:var(--teal)}
-  .chapters{max-width:980px;width:100%;margin:30px 0 0;
-    font-family:system-ui,sans-serif;font-size:14.5px;color:#b8c3c7;line-height:1.9}
-  .chapters b{color:var(--ink);font-family:Georgia,serif}
-  .chapters span{color:var(--teal);font-variant-numeric:tabular-nums;margin-right:10px}
-  footer{margin-top:40px;color:#5f737a;font-family:system-ui,sans-serif;font-size:12.5px;text-align:center;line-height:1.7}
-</style>
-</head>
-<body>
-  <div class="eyebrow">A Learning Film</div>
-  <h1>Treasury</h1>
-  <div class="sub">the art of keeping money alive</div>
-
-  <div class="player">
-    <video controls preload="metadata" poster="poster.jpg" playsinline>
-      <source src="treasury-film.mp4" type="video/mp4">
-      Your browser can’t play embedded video — <a href="treasury-film.mp4">download the film</a>.
-    </video>
-  </div>
-
-  <div class="meta">
-    <span>≈ 3 min · 1080p · original narration &amp; score</span>
-    <a href="treasury-film.mp4" download>⤓ Download MP4</a>
-  </div>
-
-  <div class="chapters">
-    <span>00:00</span><b>The hidden engine</b> &nbsp;·&nbsp;
-    <span>0:26</span>Borrow short, lend long &nbsp;·&nbsp;
-    <span>0:57</span>Liquidity ≠ solvency &nbsp;·&nbsp;
-    <span>1:17</span>The run &nbsp;·&nbsp;
-    <span>1:33</span>Repo &nbsp;·&nbsp;
-    <span>1:49</span>Collateral &amp; margin &nbsp;·&nbsp;
-    <span>2:03</span>The LCR &nbsp;·&nbsp;
-    <span>2:18</span>When it breaks &nbsp;·&nbsp;
-    <span>2:42</span>Collateral is the new cash &nbsp;·&nbsp;
-    <span>2:57</span>Three things
-  </div>
-
-  <footer>
-    A cinematic primer on the treasury &amp; funding function — for education.<br>
-    Narration is a synthetic voice in a warm documentary style (not a real person); music is original.
-  </footer>
-</body>
-</html>
+ :root{--bg:#0b1418;--ink:#f2ede1;--teal:#4bc0b0;--dim:#8aa0a6;--line:#223139;--card:#0e1b21}
+ *{box-sizing:border-box;margin:0;padding:0}
+ body{background:radial-gradient(120% 70% at 50% 0%,#12242b,#070f12);color:var(--ink);
+   font-family:Georgia,"Times New Roman",serif;min-height:100vh;padding:46px 22px 80px}
+ .wrap{max-width:1180px;margin:0 auto}
+ header{text-align:center;margin-bottom:34px}
+ .eyebrow{font-family:system-ui,sans-serif;font-size:13px;letter-spacing:.28em;text-transform:uppercase;color:var(--teal);font-weight:700}
+ h1{font-size:clamp(34px,6vw,62px);font-weight:700;line-height:1.04;margin:12px 0 8px}
+ .sub{font-style:italic;color:#cfc8b8;font-size:clamp(17px,2.4vw,23px)}
+ .stat{font-family:system-ui,sans-serif;color:var(--dim);font-size:14px;margin-top:14px}
+ .trailer{max-width:860px;margin:26px auto 10px;border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:0 18px 60px rgba(0,0,0,.5)}
+ .trailer video{width:100%;display:block;aspect-ratio:16/9;background:#000}
+ .tlabel{text-align:center;font-family:system-ui,sans-serif;color:var(--dim);font-size:13px;margin:8px 0 40px;letter-spacing:.04em}
+ .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:22px}
+ .card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 10px 34px rgba(0,0,0,.4)}
+ .card .num{font-family:system-ui,sans-serif;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);font-weight:700;padding:12px 16px 0}
+ .card video{width:100%;display:block;aspect-ratio:16/9;background:#000;margin-top:8px}
+ .cmeta{display:flex;justify-content:space-between;align-items:baseline;padding:12px 16px 15px}
+ .ct{font-size:19px;color:var(--ink)} .cd{font-family:system-ui,sans-serif;color:var(--dim);font-size:13px;font-variant-numeric:tabular-nums}
+ footer{text-align:center;margin-top:48px;color:#5f737a;font-family:system-ui,sans-serif;font-size:12.5px;line-height:1.7}
+</style></head><body><div class="wrap">
+ <header>
+   <div class="eyebrow">A Complete Course · 7 Chapters · 8:35</div>
+   <h1>Treasury</h1>
+   <div class="sub">the art of keeping money alive</div>
+   <div class="stat">Funding · Liquidity · Collateral · Hedge-fund financing · XVA · Market plumbing</div>
+ </header>
+ <div class="trailer"><video controls preload="metadata" poster="poster1.jpg" playsinline><source src="treasury-film.mp4" type="video/mp4"></video></div>
+ <div class="tlabel">▲ 3-minute overview — or watch the full course below</div>
+ <div class="grid">
+    <div class="card">
+      <div class="num">Chapter 1</div>
+      <video controls preload="metadata" poster="poster1.jpg" playsinline>
+        <source src="chapter1.mp4" type="video/mp4">
+      </video>
+      <div class="cmeta"><span class="ct">Foundations</span><span class="cd">1:13</span></div>
+    </div>
+    <div class="card">
+      <div class="num">Chapter 2</div>
+      <video controls preload="metadata" poster="poster2.jpg" playsinline>
+        <source src="chapter2.mp4" type="video/mp4">
+      </video>
+      <div class="cmeta"><span class="ct">Funding & the Money Markets</span><span class="cd">1:14</span></div>
+    </div>
+    <div class="card">
+      <div class="num">Chapter 3</div>
+      <video controls preload="metadata" poster="poster3.jpg" playsinline>
+        <source src="chapter3.mp4" type="video/mp4">
+      </video>
+      <div class="cmeta"><span class="ct">Bank Treasury, ALM & Liquidity</span><span class="cd">1:16</span></div>
+    </div>
+    <div class="card">
+      <div class="num">Chapter 4</div>
+      <video controls preload="metadata" poster="poster4.jpg" playsinline>
+        <source src="chapter4.mp4" type="video/mp4">
+      </video>
+      <div class="cmeta"><span class="ct">Collateral Management</span><span class="cd">1:18</span></div>
+    </div>
+    <div class="card">
+      <div class="num">Chapter 5</div>
+      <video controls preload="metadata" poster="poster5.jpg" playsinline>
+        <source src="chapter5.mp4" type="video/mp4">
+      </video>
+      <div class="cmeta"><span class="ct">Hedge-Fund Funding & Financing</span><span class="cd">1:11</span></div>
+    </div>
+    <div class="card">
+      <div class="num">Chapter 6</div>
+      <video controls preload="metadata" poster="poster6.jpg" playsinline>
+        <source src="chapter6.mp4" type="video/mp4">
+      </video>
+      <div class="cmeta"><span class="ct">XVA & the Balance Sheet</span><span class="cd">1:00</span></div>
+    </div>
+    <div class="card">
+      <div class="num">Chapter 7</div>
+      <video controls preload="metadata" poster="poster7.jpg" playsinline>
+        <source src="chapter7.mp4" type="video/mp4">
+      </video>
+      <div class="cmeta"><span class="ct">The Frontier</span><span class="cd">1:23</span></div>
+    </div>
+ </div>
+ <footer>A cinematic primer on the treasury &amp; funding function, for education.<br>
+ Original narration (synthetic voice, documentary style — not a real person) and original score.</footer>
+</div></body></html>
